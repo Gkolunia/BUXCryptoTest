@@ -7,13 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A32F40DD1FD748A3000BB177 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32F40DC1FD748A3000BB177 /* AppDelegate.swift */; };
-		A32F40DF1FD748A3000BB177 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32F40DE1FD748A3000BB177 /* ViewController.swift */; };
 		A32F40E21FD748A3000BB177 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A32F40E01FD748A3000BB177 /* Main.storyboard */; };
 		A32F40E41FD748A3000BB177 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A32F40E31FD748A3000BB177 /* Assets.xcassets */; };
 		A32F40E71FD748A3000BB177 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A32F40E51FD748A3000BB177 /* LaunchScreen.storyboard */; };
 		A32F40F21FD748A3000BB177 /* BUXCryptoTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32F40F11FD748A3000BB177 /* BUXCryptoTestTests.swift */; };
 		A32F40FD1FD748A3000BB177 /* BUXCryptoTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32F40FC1FD748A3000BB177 /* BUXCryptoTestUITests.swift */; };
+		FA3C158D1FD851F600686F2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C158C1FD851F500686F2D /* AppDelegate.swift */; };
+		FA3C158F1FD8520700686F2D /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C158E1FD8520700686F2D /* AppCoordinator.swift */; };
+		FA3C15941FD85C8100686F2D /* CurrencyCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C15931FD85C8100686F2D /* CurrencyCoordinator.swift */; };
+		FA3C15991FD85FBF00686F2D /* CurrencyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C15981FD85FBF00686F2D /* CurrencyViewModel.swift */; };
+		FA3C159C1FD8604000686F2D /* CurrencyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C159B1FD8604000686F2D /* CurrencyListViewController.swift */; };
+		FA3C159E1FD861CD00686F2D /* CurrencyAvailableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C159D1FD861CD00686F2D /* CurrencyAvailableModel.swift */; };
+		FA3C15A01FD861FC00686F2D /* CurrencyPurchasedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C159F1FD861FC00686F2D /* CurrencyPurchasedModel.swift */; };
+		FA3C15A21FD8626300686F2D /* CurrencyRealTimePriceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C15A11FD8626300686F2D /* CurrencyRealTimePriceModel.swift */; };
+		FA3C15A41FD8656D00686F2D /* TradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C15A31FD8656D00686F2D /* TradeViewController.swift */; };
+		FA3C15A61FD8683D00686F2D /* Storyboard+AppControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C15A51FD8683D00686F2D /* Storyboard+AppControllers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +43,6 @@
 
 /* Begin PBXFileReference section */
 		A32F40D91FD748A3000BB177 /* BUXCryptoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BUXCryptoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A32F40DC1FD748A3000BB177 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A32F40DE1FD748A3000BB177 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A32F40E11FD748A3000BB177 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A32F40E31FD748A3000BB177 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A32F40E61FD748A3000BB177 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +53,16 @@
 		A32F40F81FD748A3000BB177 /* BUXCryptoTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BUXCryptoTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A32F40FC1FD748A3000BB177 /* BUXCryptoTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BUXCryptoTestUITests.swift; sourceTree = "<group>"; };
 		A32F40FE1FD748A3000BB177 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA3C158C1FD851F500686F2D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA3C158E1FD8520700686F2D /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		FA3C15931FD85C8100686F2D /* CurrencyCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyCoordinator.swift; sourceTree = "<group>"; };
+		FA3C15981FD85FBF00686F2D /* CurrencyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewModel.swift; sourceTree = "<group>"; };
+		FA3C159B1FD8604000686F2D /* CurrencyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListViewController.swift; sourceTree = "<group>"; };
+		FA3C159D1FD861CD00686F2D /* CurrencyAvailableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyAvailableModel.swift; sourceTree = "<group>"; };
+		FA3C159F1FD861FC00686F2D /* CurrencyPurchasedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyPurchasedModel.swift; sourceTree = "<group>"; };
+		FA3C15A11FD8626300686F2D /* CurrencyRealTimePriceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRealTimePriceModel.swift; sourceTree = "<group>"; };
+		FA3C15A31FD8656D00686F2D /* TradeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeViewController.swift; sourceTree = "<group>"; };
+		FA3C15A51FD8683D00686F2D /* Storyboard+AppControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+AppControllers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +113,12 @@
 		A32F40DB1FD748A3000BB177 /* BUXCryptoTest */ = {
 			isa = PBXGroup;
 			children = (
-				A32F40DC1FD748A3000BB177 /* AppDelegate.swift */,
-				A32F40DE1FD748A3000BB177 /* ViewController.swift */,
-				A32F40E01FD748A3000BB177 /* Main.storyboard */,
-				A32F40E31FD748A3000BB177 /* Assets.xcassets */,
-				A32F40E51FD748A3000BB177 /* LaunchScreen.storyboard */,
-				A32F40E81FD748A3000BB177 /* Info.plist */,
+				FA3C15971FD85DC600686F2D /* Extension */,
+				FA3C15911FD8580A00686F2D /* CurrencyModule */,
+				FA3C15901FD857D500686F2D /* BaseClasses */,
+				FA3C158E1FD8520700686F2D /* AppCoordinator.swift */,
+				FA3C158C1FD851F500686F2D /* AppDelegate.swift */,
+				FA3C158B1FD848DB00686F2D /* Resources */,
 			);
 			path = BUXCryptoTest;
 			sourceTree = "<group>";
@@ -123,6 +139,78 @@
 				A32F40FE1FD748A3000BB177 /* Info.plist */,
 			);
 			path = BUXCryptoTestUITests;
+			sourceTree = "<group>";
+		};
+		FA3C158B1FD848DB00686F2D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A32F40E01FD748A3000BB177 /* Main.storyboard */,
+				A32F40E31FD748A3000BB177 /* Assets.xcassets */,
+				A32F40E51FD748A3000BB177 /* LaunchScreen.storyboard */,
+				A32F40E81FD748A3000BB177 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FA3C15901FD857D500686F2D /* BaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseClasses;
+			sourceTree = "<group>";
+		};
+		FA3C15911FD8580A00686F2D /* CurrencyModule */ = {
+			isa = PBXGroup;
+			children = (
+				FA3C159A1FD8602700686F2D /* Controller */,
+				FA3C15961FD85D3300686F2D /* ViewModel */,
+				FA3C15951FD85CAD00686F2D /* Model */,
+				FA3C15921FD858C700686F2D /* Coordinator */,
+			);
+			path = CurrencyModule;
+			sourceTree = "<group>";
+		};
+		FA3C15921FD858C700686F2D /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				FA3C15931FD85C8100686F2D /* CurrencyCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		FA3C15951FD85CAD00686F2D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA3C159D1FD861CD00686F2D /* CurrencyAvailableModel.swift */,
+				FA3C159F1FD861FC00686F2D /* CurrencyPurchasedModel.swift */,
+				FA3C15A11FD8626300686F2D /* CurrencyRealTimePriceModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA3C15961FD85D3300686F2D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FA3C15981FD85FBF00686F2D /* CurrencyViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FA3C15971FD85DC600686F2D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FA3C15A51FD8683D00686F2D /* Storyboard+AppControllers.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		FA3C159A1FD8602700686F2D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FA3C159B1FD8604000686F2D /* CurrencyListViewController.swift */,
+				FA3C15A31FD8656D00686F2D /* TradeViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +281,7 @@
 				TargetAttributes = {
 					A32F40D81FD748A2000BB177 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					A32F40EC1FD748A3000BB177 = {
@@ -259,8 +348,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A32F40DF1FD748A3000BB177 /* ViewController.swift in Sources */,
-				A32F40DD1FD748A3000BB177 /* AppDelegate.swift in Sources */,
+				FA3C15A41FD8656D00686F2D /* TradeViewController.swift in Sources */,
+				FA3C159E1FD861CD00686F2D /* CurrencyAvailableModel.swift in Sources */,
+				FA3C158F1FD8520700686F2D /* AppCoordinator.swift in Sources */,
+				FA3C15A21FD8626300686F2D /* CurrencyRealTimePriceModel.swift in Sources */,
+				FA3C15991FD85FBF00686F2D /* CurrencyViewModel.swift in Sources */,
+				FA3C158D1FD851F600686F2D /* AppDelegate.swift in Sources */,
+				FA3C15941FD85C8100686F2D /* CurrencyCoordinator.swift in Sources */,
+				FA3C15A01FD861FC00686F2D /* CurrencyPurchasedModel.swift in Sources */,
+				FA3C15A61FD8683D00686F2D /* Storyboard+AppControllers.swift in Sources */,
+				FA3C159C1FD8604000686F2D /* CurrencyListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,12 +523,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QK893C648G;
-				INFOPLIST_FILE = BUXCryptoTest/Info.plist;
+				INFOPLIST_FILE = BUXCryptoTest/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BUXCryptoTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -441,9 +540,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QK893C648G;
-				INFOPLIST_FILE = BUXCryptoTest/Info.plist;
+				INFOPLIST_FILE = BUXCryptoTest/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BUXCryptoTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
