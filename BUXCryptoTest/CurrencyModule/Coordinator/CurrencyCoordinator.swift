@@ -9,12 +9,21 @@
 import UIKit
 
 /// Coordinator for implementing navigation in currency module.
-class CurrencyCoordinator: CoordinatorProtocol {
+class CurrencyCoordinator: CoordinatorProtocol, TradingNavigator {
     
-    weak var rootController : UINavigationController!
+    weak var rootController : UIViewController!
     
-    func start(from navigationController: UIViewController) {
-        
+    func start(from rootViewController: UIViewController) {
+        rootController = rootViewController
+        let controller = UIStoryboard.currencyListController()
+        controller.presenter = CurrencyListPresenter(self, ServiceManager())
+        rootController.show(controller, sender: nil)
+    }
+    
+    func navigateToTrade(with currencyViewModel: CurrencyViewModel) {
+        let controller = UIStoryboard.tradeController()
+        controller.presenter = TradingPresenter(currencyViewModel, controller)
+        rootController.show(controller, sender: nil)
     }
     
 }

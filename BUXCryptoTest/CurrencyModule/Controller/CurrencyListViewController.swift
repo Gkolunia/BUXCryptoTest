@@ -6,7 +6,6 @@
 //  Copyright © 2017 Hrybenuik Mykola. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 /// Interface of class which prepares list of available currencies.
@@ -23,4 +22,8 @@ class CurrencyListViewController : UIViewController {
     
     var presenter : CurrencyAvailableListPreparing!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        navigationItem.title = "List"
+    }
 }

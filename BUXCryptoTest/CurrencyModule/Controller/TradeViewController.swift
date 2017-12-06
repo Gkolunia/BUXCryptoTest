@@ -9,6 +9,23 @@
 import Foundation
 import UIKit
 
-class TradeViewController : UIViewController {
+protocol TradingOperator {
+    var viewModel : CurrencyViewModel { get }
+    func doBuying(_ amount: Int)
+    func doSelling(_ amount: Int)
+}
+
+class TradeViewController : BaseViewController, ErrorPresentable {
+
+    var presenter : TradingOperator!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        navigationItem.title = "Trade"
+    }
+    
+    func show(_ errorViewModel: ErrorViewModel) {
+    
+    }
     
 }
