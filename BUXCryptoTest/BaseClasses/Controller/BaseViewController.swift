@@ -15,11 +15,18 @@ protocol ViewLoader : class {
 
 class BaseViewController: UIViewController, ViewLoader {
     
+    weak var loadingView : UIVisualEffectView!
+    
     func startLoading() {
+        let effectView = UIVisualEffectView(frame: view.frame)
+        effectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        effectView.effect = UIBlurEffect(style: .dark)
+        view.addSubview(effectView)
+        loadingView = effectView
     }
     
     func stopLoading() {
+        loadingView.removeFromSuperview()
     }
-    
     
 }

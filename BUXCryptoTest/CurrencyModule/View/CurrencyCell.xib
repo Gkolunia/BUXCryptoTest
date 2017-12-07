@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="70" id="QCt-Qb-ct4" customClass="CurrencyCell" customModule="BUXCryptoTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="417" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QCt-Qb-ct4" id="W3z-qE-BYO">
+                <rect key="frame" x="0.0" y="0.0" width="417" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UeS-GL-OZD">
+                        <rect key="frame" x="20" y="11" width="377" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bought:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsH-6n-q9x">
+                        <rect key="frame" x="20" y="40" width="51" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="51" id="l3V-yi-6S2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="125.10 / 255.00$" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v7i-0Y-XG0">
+                        <rect key="frame" x="79.5" y="40" width="108" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="108" id="nJe-Gm-mta"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00$ +1.5%" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y1w-b0-w2j">
+                        <rect key="frame" x="317" y="40" width="80" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="SmL-pK-mYF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.25882352939999997" green="0.71372549019999998" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RTM-H1-I5y">
+                        <rect key="frame" x="272" y="40" width="37" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="37" id="wNz-V6-osB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="y1w-b0-w2j" firstAttribute="trailing" secondItem="W3z-qE-BYO" secondAttribute="trailingMargin" id="4FS-3R-M0G"/>
+                    <constraint firstItem="UeS-GL-OZD" firstAttribute="trailing" secondItem="W3z-qE-BYO" secondAttribute="trailingMargin" id="4Tj-VV-Oh7"/>
+                    <constraint firstItem="UeS-GL-OZD" firstAttribute="leading" secondItem="W3z-qE-BYO" secondAttribute="leadingMargin" id="6On-tP-MM8"/>
+                    <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="v7i-0Y-XG0" secondAttribute="bottom" constant="2" id="MfN-9U-flT"/>
+                    <constraint firstItem="RTM-H1-I5y" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="v7i-0Y-XG0" secondAttribute="trailing" constant="8" id="NXj-n2-dLX"/>
+                    <constraint firstItem="v7i-0Y-XG0" firstAttribute="top" secondItem="UeS-GL-OZD" secondAttribute="bottom" constant="8.5" id="Sv9-wF-MUA"/>
+                    <constraint firstItem="v7i-0Y-XG0" firstAttribute="leading" secondItem="gsH-6n-q9x" secondAttribute="trailing" constant="8.5" id="i3X-6o-lI4"/>
+                    <constraint firstItem="y1w-b0-w2j" firstAttribute="leading" secondItem="RTM-H1-I5y" secondAttribute="trailing" constant="8" id="kHQ-yT-N2n"/>
+                    <constraint firstItem="gsH-6n-q9x" firstAttribute="top" secondItem="UeS-GL-OZD" secondAttribute="bottom" constant="8.5" id="ktB-mm-j4Z"/>
+                    <constraint firstItem="gsH-6n-q9x" firstAttribute="leading" secondItem="W3z-qE-BYO" secondAttribute="leadingMargin" id="oiY-a7-Ese"/>
+                    <constraint firstItem="y1w-b0-w2j" firstAttribute="top" secondItem="UeS-GL-OZD" secondAttribute="bottom" constant="8.5" id="rV9-6G-FwL"/>
+                    <constraint firstItem="RTM-H1-I5y" firstAttribute="top" secondItem="UeS-GL-OZD" secondAttribute="bottom" constant="8.5" id="wSh-m0-e5V"/>
+                    <constraint firstItem="UeS-GL-OZD" firstAttribute="top" secondItem="W3z-qE-BYO" secondAttribute="topMargin" id="y1v-Oh-oAD"/>
+                    <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="y1w-b0-w2j" secondAttribute="bottom" constant="2" id="z4i-iM-v9A"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="boughtAmountLabel" destination="v7i-0Y-XG0" id="nb3-FB-9qq"/>
+                <outlet property="currencyNameLb" destination="UeS-GL-OZD" id="W7P-Id-QeZ"/>
+                <outlet property="priceLabel" destination="y1w-b0-w2j" id="w8c-aY-EAY"/>
+            </connections>
+            <point key="canvasLocation" x="-295" y="-341"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -16,21 +16,27 @@ protocol CurrencyLoaderManager {
     
 }
 
+protocol CurrencyListView {
+    func show(_ currencies: [CurrencyViewModel])
+}
+
 class CurrencyListPresenter: CurrencyAvailableListPreparing {
     let currencyLoader : CurrencyLoaderManager
     unowned let tradeNavigator : TradingNavigator
+    unowned let currenciesView : CurrencyListView & ViewLoader
     
-    init(_ defaultTradeNavigator : TradingNavigator, _ defaultCurrencyLoader : CurrencyLoaderManager) {
+    init(_ defaultTradeNavigator : TradingNavigator, _ defaultCurrencyLoader : CurrencyLoaderManager, _ view : CurrencyListView & ViewLoader) {
         tradeNavigator = defaultTradeNavigator
         currencyLoader = defaultCurrencyLoader
+        currenciesView = view
     }
     
     func loadCurrencyList() {
-        
+        currenciesView.show([CurrencyViewModel(), CurrencyViewModel(), CurrencyViewModel(), CurrencyViewModel()])
     }
     
     func doOnSelect(_ currencyViewModel: CurrencyViewModel) {
-        
+        tradeNavigator.navigateToTrade(with: currencyViewModel)
     }
     
 }

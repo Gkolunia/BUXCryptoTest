@@ -16,7 +16,7 @@ class CurrencyCoordinator: CoordinatorProtocol, TradingNavigator {
     func start(from rootViewController: UIViewController) {
         rootController = rootViewController
         let controller = UIStoryboard.currencyListController()
-        controller.presenter = CurrencyListPresenter(self, ServiceManager())
+        controller.presenter = CurrencyListPresenter(self, ServiceManager(), controller)
         rootController.show(controller, sender: nil)
     }
     
