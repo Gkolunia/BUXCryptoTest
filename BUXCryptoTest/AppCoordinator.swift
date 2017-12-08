@@ -21,7 +21,7 @@ protocol CoordinatorProtocol {
 class AppCoordinator {
     
     /// childCoordinator keeps reference on last coordinator
-    var childCoordinator : CoordinatorProtocol?
+//    var childCoordinator : CoordinatorProtocol?
     
     private let rootWindow : UIWindow
     private let rootNavigationController : UINavigationController = UINavigationController()
@@ -35,8 +35,8 @@ class AppCoordinator {
     
     func start() {
         // Start child controller.
-        childCoordinator = CurrencyCoordinator()
-        childCoordinator?.start(from: rootNavigationController)
+        let childCoordinator = CurrencyCoordinator()
+        childCoordinator.start(from: rootNavigationController)
     }
     
 }

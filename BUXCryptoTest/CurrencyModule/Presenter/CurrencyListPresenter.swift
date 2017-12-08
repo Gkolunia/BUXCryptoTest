@@ -24,7 +24,7 @@ protocol CurrencyListView {
 
 class CurrencyListPresenter: CurrencyAvailableListPreparing {
     let currencyLoader : CurrencyLoaderManager
-    unowned let tradeNavigator : TradingNavigator
+    let tradeNavigator : TradingNavigator
     unowned let currenciesView : CurrencyListView & ViewLoader
     
     init(_ defaultTradeNavigator : TradingNavigator, _ defaultCurrencyLoader : CurrencyLoaderManager, _ view : CurrencyListView & ViewLoader) {
