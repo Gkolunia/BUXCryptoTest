@@ -22,7 +22,7 @@ class CurrencyCoordinator: CoordinatorProtocol, TradingNavigator {
     
     func navigateToTrade(with currencyViewModel: CurrencyViewModel) {
         let controller = UIStoryboard.tradeController()
-        controller.presenter = TradingPresenter(currencyViewModel, controller)
+        controller.presenter = TradingPresenter(currencyViewModel, controller, ServiceManager())
         rootController.show(controller, sender: nil)
     }
     

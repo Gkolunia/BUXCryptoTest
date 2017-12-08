@@ -13,7 +13,9 @@ protocol TradingNavigator : class {
 }
 
 protocol CurrencyLoaderManager {
-    
+    func loadAvailableCurrencyList(_ handler:@escaping CompletionHandler<[CurrencyAvailableModel]>)
+    func loadPurchasedCurrencyList(_ handler:@escaping CompletionHandler<[CurrencyPurchasedModel]>)
+    func loadRealTimePriceList(_ handler:@escaping CompletionHandler<[CurrencyRealTimePriceModel]>)
 }
 
 protocol CurrencyListView {

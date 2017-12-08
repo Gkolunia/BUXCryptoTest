@@ -12,31 +12,48 @@ protocol ErrorPresentable {
     func show(_ errorViewModel: ErrorViewModel)
 }
 
+protocol TradingManager {
+    func sell(_ amount: Float, _ currencyId: Int, _ handler:@escaping CompletionHandler<CurrencyTradeResultModel>)
+    func buy(_ amount: Float, _ currencyId: Int, _ handler:@escaping CompletionHandler<CurrencyTradeResultModel>)
+}
+
 class TradingPresenter: TradingOperator {
     
+    let tradingOperations : TradingManager
     let viewModel: CurrencyViewModel
     unowned let showingView: ErrorPresentable & ViewLoader
     
-    init(_ defaultViewModel: CurrencyViewModel, _ defaultShowingView: ErrorPresentable & ViewLoader) {
+    init(_ defaultViewModel: CurrencyViewModel, _ defaultShowingView: ErrorPresentable & ViewLoader, _ tradingManager : TradingManager) {
         viewModel = defaultViewModel
         showingView = defaultShowingView
+        tradingOperations = tradingManager
     }
     
     func doBuying(_ amount: String) {
-        
+        if let amount = getNumber(from: amount) {
+            tradingOperations.sell(amount.floatValue, 0, { (success, result, error) in
+                
+            })
+        }
+        else {
+            fatalError("Invalid parameter for buying operation")
+        }
     }
     
     func doSelling(_ amount: String) {
-        
+        if let amount = getNumber(from: amount) {
+            tradingOperations.buy(amount.floatValue, 0, { (success, result, error) in
+                
+            })
+        }
+        else {
+            fatalError("Invalid parameter for selling operation")
+        }
     }
     
     func currencyInputFormatting(_ inputString: String) -> String {
         var number: NSNumber!
-        let formatter = NumberFormatter()
-        formatter.numberStyle = .currencyAccounting
-        formatter.currencySymbol = "$"
-        formatter.maximumFractionDigits = 2
-        formatter.minimumFractionDigits = 2
+        let formatter = getCurrentFormat()
         
         var amountWithPrefix = inputString
         
@@ -53,6 +70,20 @@ class TradingPresenter: TradingOperator {
         }
         
         return formatter.string(from: number)!
+    }
+    
+    private func getCurrentFormat() -> NumberFormatter {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currencyAccounting
+        formatter.currencySymbol = "$"
+        formatter.maximumFractionDigits = 2
+        formatter.minimumFractionDigits = 2
+        return formatter
+    }
+    
+    private func getNumber(from amountString: String) -> NSNumber? {
+        let formatter = getCurrentFormat()
+        return formatter.number(from: amountString)
     }
     
 }

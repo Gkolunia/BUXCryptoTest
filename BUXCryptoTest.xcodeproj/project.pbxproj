@@ -32,6 +32,7 @@
 		FA64A6511FD99CF900C3E4AC /* ConfigurableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA64A6501FD99CF900C3E4AC /* ConfigurableCell.swift */; };
 		FA64A6541FD99DDF00C3E4AC /* CurrencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA64A6531FD99DDF00C3E4AC /* CurrencyCell.swift */; };
 		FA64A6561FD99DF200C3E4AC /* CurrencyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA64A6551FD99DF200C3E4AC /* CurrencyCell.xib */; };
+		FA64A6581FDAB29D00C3E4AC /* CurrencyTradeResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA64A6571FDAB29D00C3E4AC /* CurrencyTradeResultModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		FA64A6501FD99CF900C3E4AC /* ConfigurableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableCell.swift; sourceTree = "<group>"; };
 		FA64A6531FD99DDF00C3E4AC /* CurrencyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCell.swift; sourceTree = "<group>"; };
 		FA64A6551FD99DF200C3E4AC /* CurrencyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyCell.xib; sourceTree = "<group>"; };
+		FA64A6571FDAB29D00C3E4AC /* CurrencyTradeResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTradeResultModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +237,7 @@
 				FA3C159D1FD861CD00686F2D /* CurrencyAvailableModel.swift */,
 				FA3C159F1FD861FC00686F2D /* CurrencyPurchasedModel.swift */,
 				FA3C15A11FD8626300686F2D /* CurrencyRealTimePriceModel.swift */,
+				FA64A6571FDAB29D00C3E4AC /* CurrencyTradeResultModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -439,6 +442,7 @@
 				FA3C159E1FD861CD00686F2D /* CurrencyAvailableModel.swift in Sources */,
 				FA3C158F1FD8520700686F2D /* AppCoordinator.swift in Sources */,
 				FA64A6541FD99DDF00C3E4AC /* CurrencyCell.swift in Sources */,
+				FA64A6581FDAB29D00C3E4AC /* CurrencyTradeResultModel.swift in Sources */,
 				FA64A64E1FD99CAB00C3E4AC /* GenericTableViewDataSource.swift in Sources */,
 				FA3C15A21FD8626300686F2D /* CurrencyRealTimePriceModel.swift in Sources */,
 				FA3C15991FD85FBF00686F2D /* CurrencyViewModel.swift in Sources */,
